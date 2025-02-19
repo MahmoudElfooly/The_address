@@ -39,23 +39,6 @@ The app ensures a smooth user experience with **local cart management**, **produ
 
 ---
 
-## 📦 Installation
-
-1. **Clone the Repository**
-   ```sh
-   git clone https://github.com/your-repo/ecommerce-app.git
-   cd ecommerce-app
-   ```
-2. **Install Dependencies**
-   ```sh
-   flutter pub get
-   ```
-3. **Run the App**
-   ```sh
-   flutter run
-   ```
-
----
 
 ## 📚 Folder Structure
 
