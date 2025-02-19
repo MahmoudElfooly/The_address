@@ -15,8 +15,7 @@ class CategoryChip extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: CircleAvatar(
             radius: 36, // Adjust the size
-            backgroundImage: NetworkImage(category.image), // Network image
-            // backgroundImage: AssetImage('assets/profile.png'), // Asset image
+            backgroundImage: NetworkImage(category.image),
           ),
         ),
         SizedBox(

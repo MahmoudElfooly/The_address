@@ -1,11 +1,11 @@
-import 'package:connectivity/connectivity.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 
 Future<bool> connectedToNetwork({bool showSnackBar = true}) async {
-  final Connectivity _connectivity = Connectivity();
-
-  ConnectivityResult result = await _connectivity.checkConnectivity();
-  if (result == ConnectivityResult.mobile ||
-      result == ConnectivityResult.wifi) {
+  final List<ConnectivityResult> result =
+      await (Connectivity().checkConnectivity());
+  if (result.contains(ConnectivityResult.mobile)) {
+    return true;
+  } else if (result.contains(ConnectivityResult.wifi)) {
     return true;
   } else {
     return false;

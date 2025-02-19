@@ -33,6 +33,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  // Handle Back Gesture for Android 13+
 
   @override
   Widget build(BuildContext context) {
